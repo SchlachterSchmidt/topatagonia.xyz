@@ -120,30 +120,16 @@ window.onload=function(){
       lastRow : "nojustify",
       captions: true
   });
+
   $("#gallery").fadeIn(500);
 
   $('img.gallery-image').click(function(){
-      $(this).toggleClass('img-popup')
-      if ($(this).hasClass('img-popup')) {
-         $(this).css({'cursor': 'zoom-out', ' width': 'auto', 'position': 'fixed', 'top': '50%;', 'left': '50%;', 'margin': 'auto;', ' z-index': '2000;', 'box-shadow': '0 0 10px #000;'})
-         $(this).css({maxHeight: function() {$(this).height + 'px'}, 'marginLeft': '10px', 'marginTop': '10px'})
-         // img.style.maxHeight = imageHeight + 'px';
-         //          img.style.marginLeft = '-' + (img.offsetWidth / 2) + 'px';
-         //          img.style.marginTop = '-' + (img.offsetHeight / 2) + 'px';
-         $('#shadow').css({'display': 'block'})
+    $('#modal-container').css({'display': 'block'})
+    $('#modal-image').attr('src', '/assets/images/posts/IMG_4075.jpg')
+    $('#modal-caption').innerHTML = $(this).attr('alt')
+  });
 
-     } else {
-        $(this).css({'cursor': 'zoom-out'})
-        $('#shadow').css({'display': 'none'})
-        $("#gallery").justifiedGallery({
-              rowHeight : 220,
-              maxRowHeight: 340,
-              margins : 5,
-              border : 0,
-              fixedHeight: false,
-              lastRow : "nojustify",
-              captions: true
-          })
-     }
+  $('#close').click(function(){
+    $('#modal-container').css({'display': 'none'})
   });
 };

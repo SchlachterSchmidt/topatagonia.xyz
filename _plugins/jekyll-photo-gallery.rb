@@ -18,17 +18,11 @@ module Jekyll
         }
       end
       @result = @result + '</div>'
-      @result = @result + '<div id="myModal" class="modal">
-                            <span class="close">&times;</span>
-
-                            <!-- Modal Content (The Image) -->
-                              <img class="modal-content" id="img01">
-
-                              <!-- Modal Caption (Image Text) -->
-                              <div id="caption"></div>
-
+      @result = @result + '<div id="modal-container">
+                            <span id="close">&times;</span>
+                              <img id="modal-image">
+                              <div id="modal-caption"></div>
                            </div>'
-
     end
 
     def render(context)
