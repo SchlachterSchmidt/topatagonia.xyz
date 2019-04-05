@@ -10,7 +10,7 @@ module Jekyll
           if(curr["album"] == text.strip)
             @result = @result+'<div itemscope itemtype="http://schema.org/Photograph">
                                  <a itemprop="image" class="swipebox" title="'+curr["title"]+'">
-                                   <img alt="'+curr["title"]+'" itemprop="thumbnailUrl" src="/assets/images/posts/'+curr["img"]+'.jpg"/>
+                                   <img class="gallery-image" alt="'+curr["title"]+'" itemprop="thumbnailUrl" src="/assets/images/posts/'+curr["img"]+'.jpg"/>
                                    <meta itemprop="name" content="'+curr["title"]+'" />
                                  </a>
                                </div>'
@@ -18,23 +18,17 @@ module Jekyll
         }
       end
       @result = @result + '</div>'
+      @result = @result + '<div id="myModal" class="modal">
+                            <span class="close">&times;</span>
 
-      #If you want to configure each album gallery individually you can remove this script
-      #and add it in the template/post directly.
-      @result = @result + '<script>
-                              window.onload=function(){
-                                  $("#gallery").justifiedGallery({
-                                      rowHeight : 220,
-                                      maxRowHeight: 340,
-                                      margins : 5,
-                                      border : 0,
-                                      fixedHeight: false,
-                                      lastRow : \'nojustify\',
-                                      captions: true
-                                  });
-                                  $("#gallery").fadeIn(500);
-                              }
-                          </script>'
+                            <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img01">
+
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption"></div>
+
+                           </div>'
+
     end
 
     def render(context)
