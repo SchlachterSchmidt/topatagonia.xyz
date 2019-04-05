@@ -125,7 +125,7 @@ window.onload=function(){
 
   $('img.gallery-image').click(function(){
     $('#modal-container').css({'display': 'block'})
-    $('#modal-image').attr('src', '/assets/images/posts/IMG_4075.jpg')
+    $('#modal-image').attr('src', $(this).attr("src"))
     $('#modal-caption').innerHTML = $(this).attr('alt')
   });
 
