@@ -13,9 +13,10 @@
   background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
-/* Modal Image */
-.modal-image {
-  display: none;
+/* Add Animation - Zoom in the Modal */
+#modal-container, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
 }
 
 #modal-content {
@@ -28,6 +29,18 @@
   max-height: 1000px;
 }
 
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* Modal Image */
+.modal-image {
+  display: none;
+  width: auto;
+  height: auto;
+}
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #modal-caption {
   margin: auto;
@@ -38,17 +51,6 @@
   color: #ccc;
   padding: 10px 0;
   height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-#modal-container, #caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
 }
 
 /* The Close Button */

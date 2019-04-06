@@ -130,7 +130,7 @@ window.onload=function(){
   $('img.gallery-image').click(function(){
     var currentImage = $(this).data('value');
     openModal()
-    showCurrentImage(currentImage)
+    showImage(currentImage)
   });
 
   $('#close').click(function(){
@@ -139,12 +139,12 @@ window.onload=function(){
 
  $('#next').click(function(){
     var currentImage = findDisplayedImage();
-    showCurrentImage(currentImage + 1)
+    showImage(currentImage + 1)
  });
 
   $('#prev').click(function(){
      var currentImage = findDisplayedImage();
-     showCurrentImage(currentImage - 1)
+     showImage(currentImage - 1)
   });
 
  function openModal() {
@@ -159,19 +159,39 @@ window.onload=function(){
     return $('#modal-content').find('[style="display: block;"]').data('value');
  }
 
- function showCurrentImage(n) {
-
+ function showImage(n) {
     var index = 0;
-    var imgCount = $('.modal-image').length
+    var imgCount = $('.modal-image').length - 1
+    // if we are displaying the last image and going forward
     if (n > imgCount) {
         index = 0
-    } else if (n < 0) {
-        index = imgCount - 1
-    } else index = n
+    }
+    // if we are displaying the first image and going backwards
+    else if (n < 0) {
+        index = imgCount
+    }
+    // otherwise use arg
+    else index = n
     // hide any displayed image
     $('.modal-image').css({'display': 'none'})
     // display only the selected image
-    $('#modal-content').find("[data-value='" + n + "']").css({'display': 'block'})
+    $('#modal-content').find("[data-value='" + index + "']").css({'display': 'block'})
  }
 
+ $(document).keydown(function(event) {
+    // left arrow
+    if (event.which == 37) {
+        var currentImage = findDisplayedImage();
+        showImage(currentImage - 1)
+    }
+    // right arrow
+    if (event.which == 39) {
+        var currentImage = findDisplayedImage();
+        showImage(currentImage + 1)
+    }
+    // esc
+    if (event.which == 27) {
+        closeModal()
+    }
+ });
 };
