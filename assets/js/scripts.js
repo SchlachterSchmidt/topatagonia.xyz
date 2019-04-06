@@ -123,13 +123,55 @@ window.onload=function(){
 
   $("#gallery").fadeIn(500);
 
+
+/*
+* Image slideshow
+* ========================================================================== */
   $('img.gallery-image').click(function(){
-    $('#modal-container').css({'display': 'block'})
-    $('#modal-image').attr('src', $(this).attr("src"))
-    $('#modal-caption').innerHTML = $(this).attr('alt')
+    var currentImage = $(this).data('value');
+    openModal()
+    showCurrentImage(currentImage)
   });
 
   $('#close').click(function(){
-    $('#modal-container').css({'display': 'none'})
+    closeModal()
   });
+
+ $('#next').click(function(){
+    var currentImage = findDisplayedImage();
+    showCurrentImage(currentImage + 1)
+ });
+
+  $('#prev').click(function(){
+     var currentImage = findDisplayedImage();
+     showCurrentImage(currentImage - 1)
+  });
+
+ function openModal() {
+    $('#modal-container').css({'display': 'block'})
+ }
+
+ function closeModal() {
+    $('#modal-container').css({'display': 'none'})
+ }
+
+ function findDisplayedImage() {
+    return $('#modal-content').find('[style="display: block;"]').data('value');
+ }
+
+ function showCurrentImage(n) {
+
+    var index = 0;
+    var imgCount = $('.modal-image').length
+    if (n > imgCount) {
+        index = 0
+    } else if (n < 0) {
+        index = imgCount - 1
+    } else index = n
+    // hide any displayed image
+    $('.modal-image').css({'display': 'none'})
+    // display only the selected image
+    $('#modal-content').find("[data-value='" + n + "']").css({'display': 'block'})
+ }
+
 };
