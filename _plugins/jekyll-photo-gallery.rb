@@ -39,6 +39,9 @@ module Jekyll
       @result = @result+'<a id="prev">&#10094;</a>
                          <a id="next">&#10095;</a>
                       </div>
+                       <div class="modal-caption-container">
+                         <p id="modal-caption"></p>
+                       </div>
                    </div>'
     end
 

@@ -175,7 +175,9 @@ window.onload=function(){
     // hide any displayed image
     $('.modal-image').css({'display': 'none'})
     // display only the selected image
-    $('#modal-content').find("[data-value='" + index + "']").css({'display': 'block'})
+    var image = $('#modal-content').find("[data-value='" + index + "']")
+    image.css({'display': 'block'})
+    $('#modal-caption').html(image.attr('alt'))
  }
 
  $(document).keydown(function(event) {
