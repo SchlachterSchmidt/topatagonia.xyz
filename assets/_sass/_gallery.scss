@@ -21,7 +21,7 @@
 
 #modal-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: rgba(0,0,0,0.3);
   margin: auto;
   padding: 0;
   width: 90%;
@@ -37,7 +37,6 @@
 /* Modal Image */
 .modal-image {
   display: none;
-  max-width: inherit;
   max-height: inherit;
 }
 
@@ -51,6 +50,8 @@
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+  font-family: sans-serif;
+  color: #fff;
 }
 
 /* The Close Button */
@@ -73,7 +74,7 @@
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
-  .modal-image {
+  .modal-image, #modal-content {
     width: 100%;
   }
 }
@@ -83,10 +84,12 @@
 #next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 0px;
+  height: 100%;
+  display:flex;
+  align-items:center;
   width: auto;
-  padding: 16px;
-  margin-top: -50px;
+  padding: 0px 16px;
   color: white;
   font-weight: bold;
   font-size: 20px;
@@ -105,5 +108,5 @@
 /* On hover, add a black background color with a little bit see-through */
 #prev:hover,
 #next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
 }

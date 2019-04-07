@@ -196,4 +196,14 @@ window.onload=function(){
         closeModal()
     }
  });
+
+ /*
+ * Single image
+ * ========================================================================== */
+
+  $('.post-image').click(function(){
+      console.log("click")
+
+
+    });
 };
