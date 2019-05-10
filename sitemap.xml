@@ -3,6 +3,15 @@
 
   
   <url>
+    <loc>/jekyll/photo-gallery/cuba/</loc>
+    
+      <lastmod>2019-05-10</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
     <loc>/jekyll/photo-gallery/mexico/</loc>
     
       <lastmod>2019-05-05</lastmod>
@@ -12,7 +21,7 @@
   </url>
   
   <url>
-    <loc>/jekyll/photo-gallery/germany/</loc>
+    <loc>/jekyll/photo-gallery/in-germany/</loc>
     
       <lastmod>2019-04-16</lastmod>
     
