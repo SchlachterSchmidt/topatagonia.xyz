@@ -3,6 +3,15 @@
 
   
   <url>
+    <loc>/jekyll/photo-gallery/Salento-SanAugustin/</loc>
+    
+      <lastmod>2019-06-05</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
     <loc>/jekyll/photo-gallery/guatape-medellin/</loc>
     
       <lastmod>2019-05-22</lastmod>
