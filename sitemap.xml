@@ -3,6 +3,15 @@
 
   
   <url>
+    <loc>/jekyll/photo-gallery/Latacunga/</loc>
+    
+      <lastmod>2019-07-02</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
     <loc>/jekyll/photo-gallery/Quito/</loc>
     
       <lastmod>2019-06-15</lastmod>
