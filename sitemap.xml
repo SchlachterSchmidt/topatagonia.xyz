@@ -3,9 +3,27 @@
 
   
   <url>
+    <loc>/jekyll/photo-gallery/chiclayo-and-trujillo/</loc>
+    
+      <lastmod>2019-07-10</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
     <loc>/jekyll/photo-gallery/Latacunga/</loc>
     
       <lastmod>2019-07-02</lastmod>
+    
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>/jekyll/photo-gallery/cuenca-and-isla-de-la-plata/</loc>
+    
+      <lastmod>2019-06-25</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
