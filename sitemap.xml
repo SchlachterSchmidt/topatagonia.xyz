@@ -3,16 +3,7 @@
 
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/huaraz/</loc>
-    
-      <lastmod>2019-07-14</lastmod>
-    
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/chiclayo-and-trujillo/</loc>
+    <loc>/jekyll/photo-gallery/chiclayo-and-trujillo/</loc>
     
       <lastmod>2019-07-10</lastmod>
     
@@ -21,7 +12,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/cuenca-and-isla-de-la-plata/</loc>
+    <loc>/jekyll/photo-gallery/cuenca-and-isla-de-la-plata/</loc>
     
       <lastmod>2019-07-04</lastmod>
     
@@ -30,7 +21,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/Latacunga/</loc>
+    <loc>/jekyll/photo-gallery/Latacunga/</loc>
     
       <lastmod>2019-07-02</lastmod>
     
@@ -39,7 +30,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/Quito/</loc>
+    <loc>/jekyll/photo-gallery/Quito/</loc>
     
       <lastmod>2019-06-15</lastmod>
     
@@ -48,7 +39,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/Otavalo/</loc>
+    <loc>/jekyll/photo-gallery/Otavalo/</loc>
     
       <lastmod>2019-06-10</lastmod>
     
@@ -57,7 +48,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/Salento-SanAugustin/</loc>
+    <loc>/jekyll/photo-gallery/Salento-SanAugustin/</loc>
     
       <lastmod>2019-06-05</lastmod>
     
@@ -66,7 +57,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/guatape-medellin/</loc>
+    <loc>/jekyll/photo-gallery/guatape-medellin/</loc>
     
       <lastmod>2019-05-22</lastmod>
     
@@ -75,7 +66,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/Bogota/</loc>
+    <loc>/jekyll/photo-gallery/Bogota/</loc>
     
       <lastmod>2019-05-17</lastmod>
     
@@ -84,7 +75,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/cuba-cars/</loc>
+    <loc>/jekyll/photo-gallery/cuba-cars/</loc>
     
       <lastmod>2019-05-13</lastmod>
     
@@ -93,7 +84,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/cuba/</loc>
+    <loc>/jekyll/photo-gallery/cuba/</loc>
     
       <lastmod>2019-05-10</lastmod>
     
@@ -102,7 +93,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/mexico/</loc>
+    <loc>/jekyll/photo-gallery/mexico/</loc>
     
       <lastmod>2019-05-05</lastmod>
     
@@ -111,7 +102,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/in-germany/</loc>
+    <loc>/jekyll/photo-gallery/in-germany/</loc>
     
       <lastmod>2019-04-16</lastmod>
     
@@ -120,27 +111,9 @@
   </url>
   
   <url>
-    <loc>http://localhost:4000/jekyll/photo-gallery/leaving-ireland/</loc>
+    <loc>/jekyll/photo-gallery/leaving-ireland/</loc>
     
       <lastmod>2019-04-01</lastmod>
-    
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/posts/es6/</loc>
-    
-      <lastmod>2016-06-29</lastmod>
-    
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:4000/posts/welcome-to-jekyll/</loc>
-    
-      <lastmod>2016-06-28</lastmod>
     
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -158,7 +131,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/sitemap.xml</loc>
+      <loc>/sitemap.xml</loc>
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
     </url>
